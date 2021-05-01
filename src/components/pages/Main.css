@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #030002, #27262A);
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  text-align: center;
+  font-family: 'Cutive', serif;
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 0.5em;
+}
