@@ -31,13 +31,15 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/home' className='navbar-logo' onClick={closeMobileMenu}>
-            <span class='nav-home'>Home</span>
-          </Link>
           <div className='menu-icon' onClick={handleClick}>
             <FontAwesomeIcon icon={click ? faTimes : faBars} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+              <Link to='/main' className='nav-links' onClick={closeMobileMenu}>
+                Main
+              </Link>
+            </li>
             <li className='nav-item'>
               <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
                 Projects
