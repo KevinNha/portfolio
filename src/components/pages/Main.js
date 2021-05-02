@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Main.css'
 
 import Typewriter from "typewriter-effect";
@@ -8,6 +8,11 @@ function Main() {
   const START_DELAY_AND_PAUSE_SPEED = 1000
   const TYPE_SPEED = 100
 
+  // useEffect(() => {
+  //   document.title = "Welcome";
+  // })
+
+  document.title = "Welcome";
 
   return (
     <div className='main-container'>
