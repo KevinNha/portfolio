@@ -15,11 +15,12 @@
 
 .navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   height: 80px;
   /* max-width: 1500px; */
   width: 100%;
+  padding-right: 100px;
 }
 
 .nav-reboot {
@@ -54,8 +55,10 @@
 }
 
 .nav-item {
-  font-size: 0.8rem;
-  height: 80px;
+  font-size: 0.8em;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-links {
@@ -63,11 +66,11 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   height: 100%;
 }
 
-.nav-links:hover {
+.nav-links:hover, .nav-home:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
 }
@@ -84,7 +87,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1100px) {
   .NavbarItems {
     position: relative;
   }

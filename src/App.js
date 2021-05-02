@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import './App.css';
 
 import Navbar from './components/Navbar'
@@ -9,6 +9,9 @@ function App() {
   return (
     <>
     <Router>
+      <Route exact path="/">
+        <Redirect to="/main" />
+      </Route>
       <Navbar />
     </Router>
     <Main />
