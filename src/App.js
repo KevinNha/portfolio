@@ -12,7 +12,8 @@ function App() {
       <Route exact path="/">
         <Redirect to="/main" />
       </Route>
-      <Navbar />
+      {/* !!! FIX NAVBAR */}
+      {/* <Navbar /> */}
     </Router>
     <Main />
     </>
