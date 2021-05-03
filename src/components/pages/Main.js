@@ -12,7 +12,7 @@ function Main() {
   //   document.title = "Welcome";
   // })
 
-  document.title = "Welcome";
+  document.title = "Kevin's Portfolio";
 
   return (
     <div className='main-container'>
