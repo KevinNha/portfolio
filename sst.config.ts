@@ -11,7 +11,12 @@ export default {
 	},
 	stacks(app) {
 		app.stack(function Site({ stack }) {
-			const site = new SvelteKitSite(stack, 'site');
+			const site = new SvelteKitSite(stack, 'site', {
+				customDomain: {
+					domainName: 'hyunjinnha.com',
+					domainAlias: 'www.hyunjinnha.com'
+				}
+			});
 			stack.addOutputs({
 				url: site.url
 			});
