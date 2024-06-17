@@ -2,7 +2,12 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				sans: ['Roboto', 'sans-serif'],
+				montserrat: ['"Montserrat"', 'sans-serif']
+			}
+		}
 	},
 	plugins: [],
 	darkMode: 'selector'

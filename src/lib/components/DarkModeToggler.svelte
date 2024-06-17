@@ -19,7 +19,7 @@
 		aria-pressed={isDarkModeEnabled}
 	>
 		<span
-			class="absolute left-1 inline-block w-6 h-6 transform bg-white rounded-full shadow ring-0 transition duration-300 ease-in-out flex items-center justify-center"
+			class="absolute left-1 inline-block w-6 h-6 transform rounded-full shadow ring-0 transition duration-300 ease-in-out flex items-center justify-center"
 			class:translate-x-6={isDarkModeEnabled}
 		>
 			{#if isDarkModeEnabled}

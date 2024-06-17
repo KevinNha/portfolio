@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import { theme } from '$lib/store';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	onMount(() => {
 		if (localStorage.theme === 'dark') {
@@ -14,9 +15,10 @@
 	});
 </script>
 
-<div>
-	<div class="container mx-auto max-w-[1250px]">
-		<Navbar />
+<main class="min-h-lvh flex flex-col justify-between">
+	<Navbar />
+	<div class="container mx-auto max-w-[1250px] px-4">
 		<slot />
 	</div>
-</div>
+	<Footer />
+</main>
