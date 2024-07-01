@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { theme } from '$lib/store';
+	import profile_img from '$lib/images/profile.png';
+	import day_image from '$lib/images/Vancouver_Day.jpg';
+	import night_image from '$lib/images/Vancouver_Night.jpg';
 </script>
 
 <svelte:head>
@@ -10,7 +13,7 @@
 	<div class="relative h-full w-full">
 		<div
 			class="absolute inset-0 bg-cover bg-no-repeat bg-center transition-[background-image] ease-linear duration-300"
-			style="background-image: url({`${$theme === 'dark' ? 'src/lib/assets/Vancouver_Night.jpg' : 'src/lib/assets/Vancouver_Day.jpg'}`})"
+			style="background-image: url({`${$theme === 'dark' ? night_image : day_image}`})"
 		/>
 		<div class="absolute inset-0 bg-black opacity-50" />
 
@@ -49,7 +52,7 @@
 
 			<div class="grid grid-cols-7 gap-6 font-montserrat text-white">
 				<div class="col-span-2 pl-4 pt-6">
-					<img class="max-h-60" src="src/lib/assets/profile.png" alt="profile" />
+					<img class="max-h-60" src={profile_img} alt="profile" />
 				</div>
 				<div class="col-span-3 flex flex-col gap-6 pt-6">
 					<span class="text-xs">
@@ -61,13 +64,13 @@
 					</span>
 					<span class="text-xs">Employed Since: <span class="text-base">07/2023</span></span>
 					<span class="text-xs">Location: <span class="text-base">Vancouver, Canada</span></span>
-				</div>
-				<div class="col-span-2">
 					<span class="text-xs">
 						Contact: <span class="text-base underline">
 							<a href="mailto:hyunjinnha@gmail.com">hyunjinnha@gmail.com</a>
 						</span>
 					</span>
+				</div>
+				<div class="col-span-2">
 					<span class="text-xs">DOB: <span class="text-base">1995-July</span></span>
 				</div>
 			</div>

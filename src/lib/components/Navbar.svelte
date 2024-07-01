@@ -1,6 +1,6 @@
 <script>
 	import DarkModeToggler from './DarkModeToggler.svelte';
-	import favicon from '../assets/favicon.ico';
+	import favicon from '$lib/images/favicon.ico';
 </script>
 
 <div class="relative dark:bg-[#2e2727]/75 bg-[#E6E6E6]/25 h-20 flex items-center">
