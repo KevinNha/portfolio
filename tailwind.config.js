@@ -5,7 +5,8 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Roboto', 'sans-serif'],
-				montserrat: ['"Montserrat"', 'sans-serif']
+				montserrat: ['"Montserrat"', 'sans-serif'],
+				passionone: ['"Passion One"', 'sans-serif']
 			}
 		}
 	},
