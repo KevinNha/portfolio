@@ -27,7 +27,7 @@
 					<span class="h-6 w-6 flex items-center justify-center">
 						<Linkedin class="dark:fill-white hover:cursor-pointer" />
 					</span>
-					<span>LinkedIn</span>
+					<span class="underline">LinkedIn</span>
 				</a>
 				<a
 					class="flex flex-row gap-4 items-center"
@@ -37,7 +37,7 @@
 					<span class="h-6 w-6 flex items-center justify-center">
 						<Github class="dark:fill-white hover:cursor-pointer" />
 					</span>
-					<span>Github</span>
+					<span class="underline">Github</span>
 				</a>
 				<a
 					class="flex flex-row gap-4 items-center"
@@ -47,7 +47,7 @@
 					<span class="h-6 w-6 flex items-center justify-center">
 						<Instagram class="dark:fill-white hover:cursor-pointer" />
 					</span>
-					<span>Instagram</span>
+					<span class="underline">Instagram</span>
 				</a>
 			</div>
 		</div>
